@@ -78,7 +78,7 @@ class HomeView extends GetView<HomeController> {
                 child: SizedBox(
                   width: 70,
                   child: LoadingIndicator(
-                    indicatorType: Indicator.ballPulse,
+                    indicatorType: Indicator.ballRotateChase,
                     colors: [Colors.blue],
                     strokeWidth: 2,
                     backgroundColor: Colors.transparent,

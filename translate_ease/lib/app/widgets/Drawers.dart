@@ -99,50 +99,47 @@ Drawer basicDrawer() {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
-  decoration: BoxDecoration(
-    color: Colors.grey, // Set the grey background color
-    borderRadius: BorderRadius.circular(20), // Optional: Match the button shape if needed
-  ),
-                    child:  ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: greyColor,
-                            shape: const StadiumBorder(),
+                          decoration: BoxDecoration(
+                            color: Colors.grey, // Set the grey background color
+                            borderRadius: BorderRadius.circular(
+                                20), // Optional: Match the button shape if needed
                           ),
-                          onPressed: () {
-                            Get.back();
-                          },
-                          child: const Text(
-                            'Cancel',
-                            style: TextStyle(color: Colors.white),
-                      ))),
-                    Container(
-                                decoration: BoxDecoration(
-                                  gradient: LinearGradient(
-                                      colors: [
-                                        blueColor,
-                                        pinkColor,
-                                        purpleColor
-                                      ],
-                                      begin: Alignment.topLeft,
-                                      end: Alignment.bottomRight),
-                                  borderRadius: BorderRadius.circular(40),
-                                ),
-                                child: ElevatedButton(
-                                    style: ElevatedButton.styleFrom(
-                                      shape: const StadiumBorder(),
-                                      backgroundColor: Colors.transparent,
-                                      // Button background transparent so gradient is visible
-                                      shadowColor: Colors
-                                          .transparent, // Remove the shadow for clean look
-                                    ),
-                        onPressed: () {
-                          controller.sendRatingEmail(rate);
-                          Get.back();
-                        },
-                        child: Text('Submit',
-                            style: TextStyle(color: secondaryColor)),
-                      )
-                  )],
+                          child: ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: greyColor,
+                                shape: const StadiumBorder(),
+                              ),
+                              onPressed: () {
+                                Get.back();
+                              },
+                              child: const Text(
+                                'Cancel',
+                                style: TextStyle(color: Colors.white),
+                              ))),
+                      Container(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                                colors: [blueColor, pinkColor, purpleColor],
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight),
+                            borderRadius: BorderRadius.circular(40),
+                          ),
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: const StadiumBorder(),
+                              backgroundColor: Colors.transparent,
+                              // Button background transparent so gradient is visible
+                              shadowColor: Colors
+                                  .transparent, // Remove the shadow for clean look
+                            ),
+                            onPressed: () {
+                              controller.sendRatingEmail(rate);
+                              Get.back();
+                            },
+                            child: Text('Submit',
+                                style: TextStyle(color: secondaryColor)),
+                          ))
+                    ],
                   ),
                 ],
               ),
@@ -312,11 +309,10 @@ Drawer basicDrawer() {
                                       20), // Optional: Match the button shape if needed
                                 ),
                                 child: ElevatedButton(
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor: Colors
-                                        .transparent, // Keep the button background transparent
-                                    shape: const StadiumBorder(),
-                                  ),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: greyColor,
+                                shape: const StadiumBorder(),
+                              ),
                                   onPressed: () {
                                     Get.back();
                                   },

@@ -41,18 +41,12 @@ flutter_icons:
   image_path: "assets/smalllogo.png"
 
 flutter_native_splash:
-  color: "#E4F1FC"
-  android: false  # Disable splash screen for Android
-  web: false      # Disable splash screen for Web
-  image: assets/smalllogo.png  # For other platforms like iOS
-  android_12:
-  icon_background_color: "#E4F1FC"
-
-
+  color: "#000000"
+  image: assets/native.jpeg
+  
 flutter:
   uses-material-design: true
 
   assets:
     - assets/
-    - assets/smalllogo.png
-    - assets/layer1.png
+    

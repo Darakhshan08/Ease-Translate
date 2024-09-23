@@ -104,7 +104,7 @@ class MainScreenView extends GetView<MainScreenController> {
                                         purple2Color, // Second color
                                         pink2Color, // Third color
                                       ],
-                                      stops: [
+                                      stops: const [
                                         0.0, // 0% for the first color (purple2Color)
                                         0.62, // 50% for the second color (purple2Color)
                                         3.7, // 100% for the third color (pink2Color)
@@ -1046,12 +1046,12 @@ class MainScreenView extends GetView<MainScreenController> {
                                   text: controller.targettextEditor.text));
                               Get.snackbar('Copied', 'Text Copied',
                                   snackPosition: SnackPosition.TOP,
-                                  backgroundColor: buttonColor,
+                                  backgroundColor: pink2Color,
                                   colorText: Colors.white);
                             } else {
                               Get.snackbar('Error', 'Nothing to copy',
                                   snackPosition: SnackPosition.TOP,
-                                  backgroundColor: Colors.red,
+                                  backgroundColor:const Color.fromARGB(255, 244, 16, 0),
                                   colorText: Colors.white);
                             }
                           },
