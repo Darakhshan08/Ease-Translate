@@ -34,19 +34,24 @@ dev_dependencies:
   flutter_launcher_icons: ^0.11.0
 
 
-
 flutter_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/smalllogo.png"
-
+  image_path: "assets/icon.jpeg"
+ 
 flutter_native_splash:
-  color: "#000000"
-  image: assets/native.jpeg
-  
+  color: "#E4F1FC"
+  image: assets/smalllogo.png
+  android_12:
+    image: assets/smalllogo.png
+
+
+
 flutter:
   uses-material-design: true
 
   assets:
     - assets/
+    - assets/smalllogo.png
+    - assets/layer1.png
     
