@@ -40,10 +40,10 @@ flutter_icons:
   image_path: "assets/icon.jpeg"
  
 flutter_native_splash:
-  color: "#E4F1FC"
-  image: assets/smalllogo.png
+  color: "#000000"
+  image: assets/native.jpeg
   android_12:
-    image: assets/smalllogo.png
+    image: assets/native.jpeg
 
 
 
